@@ -6,7 +6,7 @@ import logo from '../../../assets/Icon-notepad.png';
 const Navbar = (props) => {
 
     const logout = () => {
-        window.open(`http://localhost:5000/auth/logout`, "_self");
+        window.open(`https://genletter-backend-e2bx.onrender.com/auth/logout`, "_self");
     }
 
     return (

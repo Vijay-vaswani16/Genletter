@@ -22,7 +22,7 @@ function App() {
 
   const getUser = async () => {
     try {
-      const url = `http://localhost:5000/auth/login/success`;
+      const url = `https://genletter-backend-e2bx.onrender.com/auth/login/success`;
       const { data } = await axios.get(url, { withCredentials: true });
       console.log(data);
    

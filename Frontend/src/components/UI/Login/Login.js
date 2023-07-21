@@ -4,7 +4,7 @@ import styles from './Login.module.css';
 const Login = () => {
 
     const googleAuth = () => {
-        window.open(`http://localhost:5000/auth/google/callback`, "_self"); 
+        window.open(`https://genletter-backend-e2bx.onrender.com/auth/google/callback`, "_self"); 
     }
 
     return (

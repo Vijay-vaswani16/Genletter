@@ -82,7 +82,7 @@ function Resume() {
 
     useEffect(() => {
         if (id) {
-            axios.get(`http://localhost:5000/edit/resume/${id}`)
+            axios.get(`https://genletter-backend-e2bx.onrender.com/edit/resume/${id}`)
                 .then((response) => {
                     console.log(response.data);
                     setRefs(response.data);
@@ -326,7 +326,7 @@ function Resume() {
         });
         navigate('/resume/templates', { state: refs });
 
-        await fetch("http://localhost:5000/resume", {
+        await fetch("https://genletter-backend-e2bx.onrender.com/resume", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
